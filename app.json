@@ -4,6 +4,7 @@
     "slug": "MXI Liquidity Pool",
     "version": "1.0.3",
     "orientation": "portrait",
+    "platforms": ["ios", "android", "web"],
     "icon": "./assets/images/04a4d9ac-4539-41d2-bafd-67dd75925bde.png",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
