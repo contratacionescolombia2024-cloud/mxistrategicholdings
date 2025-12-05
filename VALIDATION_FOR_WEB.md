@@ -1,6 +1,6 @@
 # Expo Web Validation Report
 
-## Summary of Changes Applied
+## ✅ Automatic Changes Applied
 
 ### 1. **Extraction and Setup**
 - ✅ Extracted ZIP file `e84d6352-8f87-464a-b525-37906b43ff77 (2) (1).zip`
@@ -31,6 +31,40 @@
   - Icon: `./assets/images/04a4d9ac-4539-41d2-bafd-67dd75925bde.png` ✓
   - Splash: `./assets/images/04a4d9ac-4539-41d2-bafd-67dd75925bde.png` ✓
   - Favicon: `./assets/images/04a4d9ac-4539-41d2-bafd-67dd75925bde.png` ✓
+
+### 6. **Code Quality Improvements**
+- ✅ Fixed service worker update interval (200ms → 30000ms) to prevent battery drain
+- ✅ Improved Workbox caching strategy with specific patterns for different resource types
+
+## 📋 TODO: Manual Actions Required
+
+The following tasks **cannot be automated** and require manual intervention before deploying to production:
+
+### High Priority
+- [ ] Install dependencies: `npm install` or `yarn install`
+- [ ] Test development server: `npm run web`
+- [ ] Test production build: `npm run build:web`
+- [ ] Configure environment variables for:
+  - [ ] Supabase credentials (URL, anon key)
+  - [ ] NowPayments API key
+  - [ ] Any other third-party service credentials
+- [ ] Test authentication flow on web browser
+- [ ] Test payment flows with test credentials
+
+### Medium Priority  
+- [ ] Address native dependencies (see "Known Issues" below)
+- [ ] Test AirBall game microphone functionality on web
+- [ ] Verify maps functionality or implement web alternative
+- [ ] Configure CORS for Supabase when accessed from web domain
+- [ ] Set up hosting platform (Vercel, Netlify, Firebase, etc.)
+- [ ] Configure custom domain and HTTPS certificate
+
+### Low Priority
+- [ ] Add web build profile to `eas.json` (if using EAS for web builds)
+- [ ] Set up CI/CD pipeline for automated web builds
+- [ ] Configure Content Security Policy headers
+- [ ] Implement analytics for web platform
+- [ ] Optimize bundle size and performance
 
 ## Known Issues and Recommendations
 
